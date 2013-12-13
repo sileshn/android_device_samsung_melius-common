@@ -24,7 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/melius-common/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-PRODUCT_BOOT_JARS += qcom.fmradio:qcmediaplayer
+PRODUCT_BOOT_JARS += qcmediaplayer
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
@@ -97,13 +97,6 @@ PRODUCT_PACKAGES += \
     gps.msm8960 \
     gps.conf \
     sap.conf
-
-# FM radio
-PRODUCT_PACKAGES += \
-    qcom.fmradio \
-    libqcomfm_jni \
-    FM2 \
-    FMRecord
 
 # Torch
 PRODUCT_PACKAGES += Torch
