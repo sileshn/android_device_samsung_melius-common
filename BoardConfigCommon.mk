@@ -77,8 +77,5 @@ BOARD_HAVE_DOCK_USBAUDIO := true
 # Allow suspend in charge mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# Enable SELinux (> Android 4.3)
-HAVE_SELINUX := true
-
 # Camera
 TARGET_NEED_SAMSUNG_MAGIC_ZSL_1508 := true
