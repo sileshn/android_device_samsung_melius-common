@@ -77,38 +77,8 @@ BOARD_HAVE_DOCK_USBAUDIO := true
 # Allow suspend in charge mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# TWRP specific build flags
-BOARD_USE_CUSTOM_RECOVERY_FONT:= \"roboto_15x24.h\"
-DEVICE_RESOLUTION := 720x1280
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-RECOVERY_SDCARD_ON_DATA := true
-TW_HAS_DOWNLOAD_MODE := false
-TW_NO_USB_STORAGE := true
-TWRP_EVENT_LOGGING := false
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-
-# dual storage definition
-TW_INTERNAL_STORAGE_PATH := "/data/media/0"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
-TW_EXTERNAL_STORAGE_PATH := "/external_sd"
-TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
-
-#TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/virtual/android_usb/android0/f_mass_storage/lun0/file
-TW_INCLUDE_FUSE_EXFAT := true
-
 # Enable SELinux (> Android 4.3)
 HAVE_SELINUX := true
-
-# Brightness
-TW_BRIGHTNESS_PATH := "/sys/devices/platform/mipi_novatek_nt35596.2049/lcd/panel/panel/brightness"
-TW_MAX_BRIGHTNESS := 255
-
-#TARGET_USERIMAGES_USE_EXT4 := true # already defined in cm
-TW_INCLUDE_FB2PNG := true
-
-# Prevent greyish screen after screen timeout
-TW_NO_SCREEN_TIMEOUT := true
-
 
 # Camera
 TARGET_NEED_SAMSUNG_MAGIC_ZSL_1508 := true
