@@ -7,14 +7,9 @@ bin/hci_qcomm_init
 bin/mpdecision
 bin/thermald
 
-# Bluetooth firmware
-vendor/firmware/bcm2079xB4_firmware.ncd
-vendor/firmware/bcm2079xB4_pre_firmware.ncd
-
 # Audio
 lib/libacdbloader.so
 lib/libaudcal.so
-lib/libcsd-client.so
 
 # mmparser extended
 lib/libDivxDrm.so
@@ -47,8 +42,6 @@ etc/firmware/vidc_1080p.fw
 # Graphics
 lib/libI420colorconvert.so
 lib/libmm-color-convertor.so
-lib/libNimsWrap.so
-lib/libcnefeatureconfig.so
 
 # Radio
 bin/ds_fmc_appd
@@ -92,8 +85,6 @@ lib/hw/sensors.msm8960.so
 
 # Camera
 bin/mm-qcamera-daemon
-cameradata/datapattern_420sp.yuv
-cameradata/datapattern_front_420sp.yuv
 lib/hw/camera.msm8960.so:/lib/hw/camera.vendor.msm8960.so
 lib/libadsprpc.so
 lib/libchromatix_imx175_antishake.so
