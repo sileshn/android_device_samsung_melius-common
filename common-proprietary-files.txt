@@ -35,9 +35,6 @@ lib/libsc-a3xx.so
 lib/libC2D2.so
 lib/libOpenVG.so
 lib/libOpenCL.so
-etc/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw
-etc/firmware/vidc_1080p.fw
 
 # Graphics
 lib/libI420colorconvert.so
