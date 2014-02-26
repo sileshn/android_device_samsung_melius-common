@@ -70,8 +70,8 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
-# Time services
-bin/time_daemon
+# Time services	72
+bin/time_daemon	73
 lib/libtime_genoff.so
 
 # GPS
