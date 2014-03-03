@@ -47,7 +47,6 @@ bin/sec-ril
 bin/qmuxd
 bin/rild
 bin/rmt_storage
-lib/libatparser.so
 lib/libcordon.so
 lib/libdiag.so
 lib/libdsutils.so
@@ -133,8 +132,6 @@ bin/qseecomd
 lib/libdrmdecrypt.so
 lib/libdrmfs.so
 lib/libdrmtime.so
-lib/libhdcp2.so
 lib/libQSEEComAPI.so
 lib/libWVStreamControlAPI_L1.so
-lib/libtzplayready.so
 lib/libwvm.so
