@@ -25,9 +25,6 @@
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/melius-common/include
 
-# For backwards compatibility with camera blobs
-COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
-
 # Kernel
 BOARD_KERNEL_CMDLINE         := console=null androidboot.hardware=qcom androidboot.selinux=permissive user_debug=31
 BOARD_KERNEL_BASE            := 0x80200000
@@ -78,5 +75,7 @@ BOARD_HAVE_DOCK_USBAUDIO := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # Camera
+COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 TARGET_NEED_CAMERA_ZSL := true
 TARGET_NEED_FFC_PICTURE_FIXUP := true
+
