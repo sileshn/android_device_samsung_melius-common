@@ -30,7 +30,8 @@ vendor/lib/egl/libGLESv2S3D_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libC2D2.so
-vendor/lib/libc2d2_a3xx.so
+vendor/lib/libc2d30.so
+vendor/lib/libc2d30-a3xx.so
 vendor/lib/libCB.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-a3xx.so
@@ -87,7 +88,7 @@ lib/hw/sensors.msm8960.so
 
 # Camera
 bin/mm-qcamera-daemon
-lib/hw/camera.vendor.msm8960.so
+lib/hw/camera.msm8960.so
 lib/libadsprpc.so
 lib/libchromatix_imx175_antishake.so
 lib/libchromatix_imx175_default_video.so
