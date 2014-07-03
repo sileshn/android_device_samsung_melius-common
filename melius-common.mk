@@ -167,7 +167,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cwm.enable_key_repeat=true \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
-    persist.audio.lowlatency.rec=false
+    persist.audio.lowlatency.rec=false \
+    audio.gapless.playback.disable=true
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
