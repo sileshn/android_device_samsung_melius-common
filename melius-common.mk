@@ -149,7 +149,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.fm.transmitter=false \
     ro.use_data_netmgrd=true \
     lpa.decode=true \
-    lpa.use-stagefright=true \
     persist.rild.nitz_plmn="" \
     persist.rild.nitz_long_ons_0="" \
     persist.rild.nitz_long_ons_1="" \
