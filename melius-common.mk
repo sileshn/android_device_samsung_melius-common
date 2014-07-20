@@ -168,7 +168,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
     persist.audio.lowlatency.rec=false \
-    audio.gapless.playback.disable=true
+    audio.gapless.playback.disable=true \
+    qcom.hw.aac.encoder=true
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
