@@ -2684,10 +2684,10 @@ SectionDevice
 		'RX1 Digital Volume':1:0
 	EndSequence
 
-	ACDBID  7:1
+	ACDBID	7:1
 	EffectsMixerCTL "SRS TruMedia"
 	EC_REF_RXMixerCTL "I2S_RX"
-	
+
 EndSection
 
 SectionDevice
@@ -2759,7 +2759,7 @@ SectionDevice
 		'DAC1 Switch':1:0
 	EndSequence
 
-	ACDBID  37:1
+	ACDBID	37:1
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -2935,7 +2935,7 @@ SectionDevice
 		'RX3 Digital Volume':1:0
 	EndSequence
 
-	ACDBID  10:1
+	ACDBID	10:1
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -2974,42 +2974,42 @@ SectionDevice
 	Comment "Speaker Headset Rx combo device"
 
 	EnableSequence
-		'PRI_RX Channels':0:Two
-		'RX4 MIX1 INP1':0:RX1
-		'RX4 Digital Volume':1:65%
-		'SLIM RX1 MUX':0:AIF1_PB
-		'SLIM RX2 MUX':0:AIF1_PB
+		'DAC3 MUX':0:INV_RX1
+		'DAC2 MUX':0:RX1
+		'DAC1 MUX':0:RX1
 		'RX1 MIX1 INP1':0:RX1
-		'RX2 MIX1 INP1':0:RX2
-		'HPHL DAC Switch':1:1
-		'HPHR DAC Switch':1:1
-		'SPK DAC Switch':1:1
-		'HPHL Volume':1:25%
-		'HPHR Volume':1:25%
-		'RX1 Digital Volume':1:65%
-		'RX2 Digital Volume':1:65%
-		'SPK DRV Volume':1:100%
+		'RX1 Digital Volume':1:62
+		'PMIC SPK Gain':0:POS_20_DB
+		'PRI_RX Channels':0:Two
+		'SPK_HPH Function':0:ON
+		'RX2 MIX1 INP1':0:RX1
+		'RX3 MIX1 INP1':0:RX2
+		'DAC4 MUX':0:ON
+		'LINEOUT1 Volume':1:100
+		'LINEOUT2 Volume':1:100
+		'HPHL Volume':1:25
+		'HPHR Volume':1:25
+		'RX2 Digital Volume':1:46
+		'RX3 Digital Volume':1:46
 	EndSequence
 
 	DisableSequence
+		'SPK_HPH Function':0:OFF
 		'RX1 MIX1 INP1':0:ZERO
+		'DAC3 MUX':0:ZERO
+		'DAC2 MUX':0:ZERO
+		'DAC1 MUX':0:ZERO
 		'RX2 MIX1 INP1':0:ZERO
-		'RX4 MIX1 INP1':0:ZERO
-		'SLIM RX1 MUX':0:ZERO
-		'RX4 Digital Volume':1:0
-		'HPHL DAC Switch':1:0
-		'SLIM RX1 MUX':0:ZERO
-		'SLIM RX2 MUX':0:ZERO
-		'HPHR DAC Switch':1:0
-		'SPK DAC Switch':1:0
+		'RX3 MIX1 INP1':0:ZERO
+		'DAC4 MUX':0:ZERO
 		'HPHL Volume':1:0
 		'HPHR Volume':1:0
 		'RX1 Digital Volume':1:0
 		'RX2 Digital Volume':1:0
-		'SPK DRV Volume':1:0%
+		'RX3 Digital Volume':1:0
 	EndSequence
 
-	ACDBID  15:1
+	ACDBID	15:1
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -3198,7 +3198,7 @@ SectionDevice
 		'MICBIAS1 CAPLESS Switch':1:0
 	EndSequence
 
-	ACDBID  4:2
+	ACDBID	4:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -3284,7 +3284,7 @@ SectionDevice
 		'MICBIAS2 CAPLESS Switch':1:0
 	EndSequence
 
-	ACDBID  56:2
+	ACDBID	56:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -3308,7 +3308,7 @@ SectionDevice
 		'MICBIAS1 CAPLESS Switch':1:0
 	EndSequence
 
-	ACDBID  36:2
+	ACDBID	36:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -3334,7 +3334,7 @@ SectionDevice
 		'MICBIAS1 CAPLESS Switch':1:0
 	EndSequence
 
-	ACDBID  54:2
+	ACDBID	54:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -3360,7 +3360,7 @@ SectionDevice
 		'MICBIAS1 CAPLESS Switch':1:0
 	EndSequence
 
-	ACDBID  4:2
+	ACDBID	4:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -3412,7 +3412,7 @@ SectionDevice
 		'MICBIAS2 CAPLESS Switch':1:0
 	EndSequence
 
-	ACDBID  53:2
+	ACDBID	53:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -3434,7 +3434,7 @@ SectionDevice
 		'MICBIAS1 CAPLESS Switch':1:0
 	EndSequence
 
-	ACDBID  36:2
+	ACDBID	36:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -3545,7 +3545,7 @@ SectionDevice
 		'MICBIAS2 CAPLESS Switch':1:0
 	EndSequence
 
-	ACDBID  56:2
+	ACDBID	56:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -3580,7 +3580,7 @@ EndSection
 		'MICBIAS2 CAPLESS Switch':1:0
 	EndSequence
 
-	ACDBID  56:2
+	ACDBID	56:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -3728,7 +3728,7 @@ SectionDevice
 	DisableSequence
 	EndSequence
 
-	ACDBID  45:2
+	ACDBID	45:2
 
 	EffectsMixerCTL "SRS TruMedia"
 
@@ -3789,7 +3789,7 @@ SectionDevice
 	DisableSequence
 	EndSequence
 
-	ACDBID  18:1
+	ACDBID	18:1
 	EffectsMixerCTL "SRS TruMedia HDMI"
 
 EndSection
@@ -4126,7 +4126,7 @@ SectionDevice
 		'MICBIAS4 CAPLESS Switch':1:0
 	EndSequence
 
-	ACDBID  46:2
+	ACDBID	46:2
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
@@ -4152,14 +4152,19 @@ SectionDevice
 
 	EnableSequence
 		'PRI_RX Channels':0:One
+		'DAC1 MUX':0:RX1
 		'RX1 MIX1 INP1':0:RX1
-		'EAR PA Gain':0:POS_2_DB
+		'EAR PA Gain':0:POS_6_DB
 		'DAC1 Switch':1:1
+		'RX1 Digital Volume':2:71.0%
 	EndSequence
 
 	DisableSequence
+		'DAC1 MUX':0:ZERO
 		'RX1 MIX1 INP1':0:ZERO
+		'EAR PA Gain':0:POS_6_DB
 		'DAC1 Switch':1:0
+		'RX1 Digital Volume':1:0
 	EndSequence
 
 	ACDBID	7:1
@@ -4179,7 +4184,7 @@ SectionDevice
 		'LINEOUT2 Volume':2:75.0%
 		'PRI_RX Channels':0:One
 		'RX1 MIX1 INP1':0:RX1
-		'RX1 Digital Volume':2:67.7%
+		'RX1 Digital Volume':2:68.5%
 		'PMIC SPK Gain':0:POS_20_DB
 	EndSequence
 
@@ -4193,7 +4198,6 @@ SectionDevice
 
 	ACDBID	15:1
 	EffectsMixerCTL "SRS TruMedia"
-	EC_REF_RXMixerCTL "I2S_RX"
 
 EndSection
 
@@ -4203,21 +4207,25 @@ SectionDevice
 
 	EnableSequence
 		'PRI_RX Channels':0:Two
-		'RX1 MIX1 INP1':0:RX1
-		'RX2 MIX1 INP1':0:RX2
-		'HPHL DAC Switch':1:1
-		'HPHR DAC Switch':1:1
+		'RX2 MIX1 INP1':0:RX1
+		'RX3 MIX1 INP1':0:RX2
+		'DAC4 MUX':0:ON
 		'HPHL Volume':1:80
 		'HPHR Volume':1:80
+		'RX2 Digital Volume':1:67
+		'RX3 Digital Volume':1:67
+		'COMP1 Switch':1:1
 	EndSequence
 
 	DisableSequence
-		'RX1 MIX1 INP1':0:ZERO
 		'RX2 MIX1 INP1':0:ZERO
-		'HPHL DAC Switch':1:0
-		'HPHR DAC Switch':1:0
+		'RX3 MIX1 INP1':0:ZERO
+		'DAC4 MUX':0:ZERO
 		'HPHL Volume':1:0
 		'HPHR Volume':1:0
+		'RX2 Digital Volume':1:0
+		'RX3 Digital Volume':1:0
+		'COMP1 Switch':1:0
 	EndSequence
 
 	ACDBID	10:1
@@ -4230,25 +4238,42 @@ SectionDevice
 	Comment "PROXY Rx + Speaker Headset Rx combo device"
 
 	EnableSequence
-		'PRI_RX Channels':0:Two
+		'DAC3 MUX':0:INV_RX1
+		'DAC2 MUX':0:RX1
+		'DAC1 MUX':0:RX1
 		'RX1 MIX1 INP1':0:RX1
-		'RX2 MIX1 INP1':0:RX2
-		'HPHL DAC Switch':1:1
-		'HPHR DAC Switch':1:1
-		'HPHL Volume':1:80
-		'HPHR Volume':1:80
+		'RX1 Digital Volume':1:62
+		'PMIC SPK Gain':0:POS_20_DB
+		'PRI_RX Channels':0:Two
+		'SPK_HPH Function':0:ON
+		'RX2 MIX1 INP1':0:RX1
+		'RX3 MIX1 INP1':0:RX2
+		'DAC4 MUX':0:ON
+		'LINEOUT1 Volume':1:100
+		'LINEOUT2 Volume':1:100
+		'HPHL Volume':1:25
+		'HPHR Volume':1:25
+		'RX2 Digital Volume':1:46
+		'RX3 Digital Volume':1:46
 	EndSequence
 
 	DisableSequence
+		'SPK_HPH Function':0:OFF
 		'RX1 MIX1 INP1':0:ZERO
+		'DAC3 MUX':0:ZERO
+		'DAC2 MUX':0:ZERO
+		'DAC1 MUX':0:ZERO
 		'RX2 MIX1 INP1':0:ZERO
-		'HPHL DAC Switch':1:0
-		'HPHR DAC Switch':1:0
+		'RX3 MIX1 INP1':0:ZERO
+		'DAC4 MUX':0:ZERO
 		'HPHL Volume':1:0
 		'HPHR Volume':1:0
+		'RX1 Digital Volume':1:0
+		'RX2 Digital Volume':1:0
+		'RX3 Digital Volume':1:0
 	EndSequence
 
-	ACDBID	10:1
+	ACDBID	15:1
 	EffectsMixerCTL "SRS TruMedia"
 
 EndSection
