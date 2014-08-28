@@ -307,10 +307,10 @@
          Bottom   Top + 400
          Right    Display Width - 100 -->
     <integer-array name="config_smartCoverWindowCoords">
-        <item>30</item>
-        <item>44</item>
-        <item>400</item>
-        <item>740</item>
+        <item>100</item>
+        <item>25</item>
+        <item>500</item>
+        <item>660</item>
     </integer-array>
 
 </resources>
