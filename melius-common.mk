@@ -174,10 +174,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril.v3=samsungEMSReq
 	
-# RIL
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=SamsungMSM8930RIL
-
 # call common msm8930
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
 

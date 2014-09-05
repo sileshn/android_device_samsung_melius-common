@@ -94,7 +94,4 @@ TARGET_NEED_DISABLE_FACE_DETECTION_BOTH_CAMERAS := true
 BOARD_USES_QC_TIME_SERVICES := true
 
 # Build our own PowerHAL
-TARGET_POWERHAL_VARIANT :=
-
-# Custom RIL class
-BOARD_RIL_CLASS := ../../../device/samsung/melius-common/ril/
+TARGET_POWERHAL_VARIANT := 
