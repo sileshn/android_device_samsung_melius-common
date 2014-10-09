@@ -22,4 +22,6 @@
 <resources>
     <!-- Default Anti Banding setting. -->
     <string name="pref_camera_antibanding_default" translatable="false">off</string>
+    
+    <string name="pref_camera_denoise_default" translatable="false">denoise-on</string>
 </resources>
