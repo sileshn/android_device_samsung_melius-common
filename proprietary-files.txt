@@ -49,6 +49,7 @@ bin/ds_fmc_appd
 bin/qmuxd
 bin/rild
 bin/rmt_storage
+etc/plmn_se13.bin
 lib/libcordon.so
 lib/libfactoryutil.so
 lib/libomission_avoidance.so
