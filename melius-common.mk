@@ -60,6 +60,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
     $(LOCAL_PATH)/keylayout/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl \
     $(LOCAL_PATH)/keylayout/ue_rf4ce_remote.kl:system/usr/keylayout/ue_rf4ce_remote.kl
+
+# Keylayouts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
 	
 # Ramdisk
 PRODUCT_COPY_FILES += \
