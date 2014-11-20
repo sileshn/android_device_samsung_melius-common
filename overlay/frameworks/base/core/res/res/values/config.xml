@@ -281,11 +281,6 @@
     <!-- Base "touch slop" value used by ViewConfiguration as a movement threshold where scrolling should begin. -->
     <dimen name="config_viewConfigurationTouchSlop">4dp</dimen>
 
-    <!-- Enable the option to check proximity sensor when deciding whether to turn the screen on 
-         NOTE ! - Enable for devices that have a fast response proximity sensor -->
-    <bool name="config_proximityCheckOnWake">true</bool>
-    <integer name="config_proximityCheckTimeout">400</integer>
-
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening it causes the device to wake up.
          The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
