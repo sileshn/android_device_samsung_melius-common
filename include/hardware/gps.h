@@ -117,23 +117,9 @@ typedef uint16_t GpsLocationFlags;
 
 /** Flags used to specify which aiding data to delete
     when calling delete_aiding_data(). */
-typedef uint16_t GpsAidingData;
+typedef uint32_t GpsAidingData;
 // IMPORTANT: Note that the following values must match
 // constants in GpsLocationProvider.java.
-
-#define GPS_DELETE_EPHEMERIS        0x0001
-#define GPS_DELETE_ALMANAC          0x0002
-#define GPS_DELETE_POSITION         0x0004
-#define GPS_DELETE_TIME             0x0008
-#define GPS_DELETE_IONO             0x0010
-#define GPS_DELETE_UTC              0x0020
-#define GPS_DELETE_HEALTH           0x0040
-#define GPS_DELETE_SVDIR            0x0080
-#define GPS_DELETE_SVSTEER          0x0100
-#define GPS_DELETE_SADATA           0x0200
-#define GPS_DELETE_RTI              0x0400
-#define GPS_DELETE_CELLDB_INFO      0x8000
-#define GPS_DELETE_ALL              0xFFFF
 
 #define GPS_DELETE_EPHEMERIS                     0x00000001
 #define GPS_DELETE_ALMANAC                       0x00000002
