@@ -53,7 +53,6 @@ etc/plmn_se13.bin
 lib/libcordon.so
 lib/libfactoryutil.so
 lib/libomission_avoidance.so
-lib/libreference-ril.so
 lib/libril.so
 lib/libsec-ril.so
 lib/libsecnativefeature.so
@@ -84,11 +83,7 @@ bin/time_daemon
 
 # GPS
 bin/irsc_util
-lib/hw/gps.default.so
-lib/libgps.utils.so
 lib/libloc_api_v02.so
-lib/libloc_core.so
-lib/libloc_eng.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
@@ -150,14 +145,14 @@ lib/libqc-opt.so
 # DRM
 bin/insthk
 bin/qseecomd
-lib/drm/libdrmwvmplugin.so
 lib/libdrmdecrypt.so
 lib/libdrmfs.so
 lib/libdrmtime.so
 lib/libhdcp2.so
 lib/libQSEEComAPI.so
-lib/libwvm.so
+vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/libwvm.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libWVStreamControlAPI_L1.so
 
