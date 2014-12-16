@@ -181,7 +181,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     qcom.hw.aac.encoder=true \
     media.stagefright.use-awesome=true \
     ro.config.max_starting_bg=8 \
-    camera2.portability.force_api=1
+    camera2.portability.force_api=1 \
+    mm.enable.smoothstreaming=true
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
