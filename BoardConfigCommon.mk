@@ -73,8 +73,8 @@ TARGET_NEED_FFC_VIDEO_FIXUP := true
 TARGET_NEED_DISABLE_FACE_DETECTION := true
 TARGET_NEED_DISABLE_FACE_DETECTION_BOTH_CAMERAS := true
 
-# Build our own PowerHAL
-TARGET_POWERHAL_VARIANT :=
+# PowerHAL
+TARGET_POWERHAL_VARIANT := qcom
 
 # Custom RIL class
 BOARD_RIL_CLASS := ../../../device/samsung/melius-common/ril/
