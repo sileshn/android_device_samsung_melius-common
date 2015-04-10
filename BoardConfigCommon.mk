@@ -80,3 +80,6 @@ TARGET_POWERHAL_VARIANT := qcom
 
 # Custom RIL class
 BOARD_RIL_CLASS := ../../../device/samsung/melius-common/ril/
+
+# CMHW
+BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
