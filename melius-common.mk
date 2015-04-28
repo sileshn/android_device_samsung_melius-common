@@ -21,7 +21,7 @@ $(call inherit-product-if-exists, vendor/samsung/melius-common/melius-common-ven
 DEVICE_PACKAGE_OVERLAYS += device/samsung/melius-common/overlay
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Boot animation
