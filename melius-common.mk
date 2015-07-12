@@ -111,6 +111,12 @@ PRODUCT_PACKAGES += \
     fsck.f2fs \
     mkfs.f2fs
 
+#EXFAT
+PRODUCT_PACKAGES += \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
+
 # IR feature permission
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml
