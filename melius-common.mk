@@ -14,8 +14,8 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/melius-common/melius-common-vendor.mk)
+# Also get non-open-source specific aspects
+$(call inherit-product, vendor/samsung/melius-common/melius-common-vendor.mk)
 
 # Common Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/melius-common/overlay
