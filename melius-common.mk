@@ -119,6 +119,10 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 
+#OTA
+PRODUCT_PACKAGES += \
+    OTAUpdates
+
 # IR feature permission
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml

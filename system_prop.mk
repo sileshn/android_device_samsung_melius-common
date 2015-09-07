@@ -77,3 +77,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.image-dex2oat-filter=everything \
     dalvik.vm.dex2oat-filter=everything
+
+# OTA
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.ota.romname=temasek-melius \
+ro.ota.version=$(shell date +%F | sed s@-@@g) \
+ro.ota.manifest=https://dl.dropboxusercontent.com/s/jo7l4s7ojuht4y8/cm-melius.xml?dl=1
