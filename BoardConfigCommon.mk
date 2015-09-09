@@ -60,6 +60,15 @@ BOARD_USES_SEPERATED_VOIP := true
 QCOM_CSDCLIENT_ENABLED := false
 QCOM_OUTPUT_FLAGS_ENABLED := false
 
+# Enable dex-preoptimization to speed up first boot sequence
+ifeq ($(HOST_OS),linux)
+  ifeq ($(TARGET_BUILD_VARIANT),userdebug)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
+
 # Allow suspend in charge mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
