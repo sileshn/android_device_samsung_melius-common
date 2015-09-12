@@ -123,6 +123,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OTAUpdates
 
+# OpenCamera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/net.sourceforge.opencamera.apk:system/priv-app/OpenCamera/OpenCamera.apk
+
 # IR feature permission
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml
