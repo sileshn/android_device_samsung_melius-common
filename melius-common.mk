@@ -127,6 +127,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/net.sourceforge.opencamera.apk:system/priv-app/OpenCamera/OpenCamera.apk
 
+# SelinuxModeChanger
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/com.mrbimc.selinux_42.apk:system/priv-app/SELinuxModeChanger/SELinuxModeChanger.apk
+
 # Add google webview chromium prebuild packages
 PRODUCT_PACKAGES += \
     libwebviewchromium_plat_support \
