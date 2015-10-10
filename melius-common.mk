@@ -127,11 +127,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/com.mrbimc.selinux_42.apk:system/priv-app/SELinuxModeChanger/SELinuxModeChanger.apk
 
-# Add google webview chromium prebuild packages
-PRODUCT_PACKAGES += \
-    libwebviewchromium_plat_support \
-    libwebviewchromium_loader
-
 # IR feature permission
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml
