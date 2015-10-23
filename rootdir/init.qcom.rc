@@ -151,9 +151,6 @@ on boot
 
 # MSM specific files that need to be created on /data
 on post-fs-data
-    # We will remap this as /mnt/sdcard with the sdcard fuse tool
-    mkdir /data/media 0770 media_rw media_rw
-
     # Create directory used by audio subsystem
     mkdir /data/misc/audio 0770 audio audio
 
@@ -353,5 +350,4 @@ on property:persist.sys.ssr.restart_level=3
 
 on property:sys.boot_completed=1
     start qcom-audio
-    start qcom-wifi
     setprop sys.io.scheduler bfq
