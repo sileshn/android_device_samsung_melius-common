@@ -37,6 +37,10 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/melius-common/rootdir/fstab.qcom
+
+# Reduce space taken by the journal
+BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
+
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
