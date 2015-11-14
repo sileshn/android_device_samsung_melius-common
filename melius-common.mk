@@ -122,9 +122,9 @@ PRODUCT_PACKAGES += \
     fsck.f2fs \
     mkfs.f2fs
 
-# Samsung symbols
+# RIL
 PRODUCT_PACKAGES += \
-    libsamsung_symbols
+    libril_shim
 
 # stlport
 PRODUCT_PACKAGES += \
