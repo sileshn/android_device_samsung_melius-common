@@ -48,7 +48,6 @@ public class MeliusRIL extends RIL {
     public MeliusRIL(Context context, int preferredNetworkType,
             int cdmaSubscription, Integer instanceId) {
         super(context, preferredNetworkType, cdmaSubscription, instanceId);
-        mQANElements = 6;
     }
 
     @Override
