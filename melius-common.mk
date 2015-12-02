@@ -142,10 +142,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/net.sourceforge.opencamera.apk:system/priv-app/OpenCamera/OpenCamera.apk
 
-# CyanogenMod Camera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/CyanogenModCamera.apk:system/priv-app/CyanogenModCamera/CyanogenModCamera.apk
-
 # call common melius system props
 $(call inherit-product, device/samsung/melius-common/system_prop.mk)
 
