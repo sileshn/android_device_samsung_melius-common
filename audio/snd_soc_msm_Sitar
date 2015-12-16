@@ -3178,6 +3178,32 @@ SectionDevice
 EndSection
 
 SectionDevice
+	Name "Voice Headset"
+	Comment "Headset Tx device for Voice call"
+
+	EnableSequence
+		'PRI_TX Channels':0:One
+		'SLIM TX1 MUX':0:DEC1
+		'DEC1 MUX':0:ADC2
+		'ADC2 Volume':1:100
+		'DEC1 Volume':2:71.1%
+		'MICBIAS2 CAPLESS Switch':1:1
+	EndSequence
+
+	DisableSequence
+		'SLIM TX1 MUX':0:ZERO
+		'DEC1 MUX':0:ZERO
+		'ADC2 Volume':1:0
+		'DEC1 Volume':1:0
+		'MICBIAS2 CAPLESS Switch':1:0
+	EndSequence
+
+	ACDBID	8:2
+	EffectsMixerCTL "SRS TruMedia"
+
+EndSection
+
+SectionDevice
 	Name "Handset"
 	Comment "Handset Tx device"
 
