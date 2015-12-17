@@ -3185,8 +3185,8 @@ SectionDevice
 		'PRI_TX Channels':0:One
 		'SLIM TX1 MUX':0:DEC1
 		'DEC1 MUX':0:ADC2
-		'ADC2 Volume':1:100
-		'DEC1 Volume':2:71.1%
+		'ADC2 Volume':1:63.2%
+		'DEC1 Volume':2:67.7%
 		'MICBIAS2 CAPLESS Switch':1:1
 	EndSequence
 
