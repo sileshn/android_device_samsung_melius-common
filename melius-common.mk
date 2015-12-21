@@ -142,6 +142,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/net.sourceforge.opencamera.apk:system/priv-app/OpenCamera/OpenCamera.apk
 
+# SelinuxModeChanger
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/com.mrbimc.selinux_42.apk:system/priv-app/SELinuxModeChanger/SELinuxModeChanger.apk
+
 # call common melius system props
 $(call inherit-product, device/samsung/melius-common/system_prop.mk)
 
