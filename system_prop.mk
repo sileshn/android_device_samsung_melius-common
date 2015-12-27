@@ -3,7 +3,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.mms_data_profile=5 \
     ro.telephony.ril_class=MeliusRIL \
     ro.ril.telephony.mqanelements=6 \
-    persist.radio.add_power_save=1
+    persist.radio.add_power_save=1 \
+    persist.data.qmi.adb_logmask=0
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
