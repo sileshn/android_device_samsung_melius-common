@@ -139,7 +139,7 @@ PRODUCT_PACKAGES += \
 
 #OTA
 PRODUCT_PACKAGES += \
-    OTAUpdates
+    CMRemixOTA
 
 # OpenCamera
 PRODUCT_COPY_FILES += \
