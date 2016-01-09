@@ -88,6 +88,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
@@ -140,10 +144,6 @@ PRODUCT_PACKAGES += \
 #OTA
 PRODUCT_PACKAGES += \
     CMRemixOTA
-
-# OpenCamera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/net.sourceforge.opencamera.apk:system/priv-app/OpenCamera/OpenCamera.apk
 
 # SelinuxModeChanger
 PRODUCT_COPY_FILES += \
