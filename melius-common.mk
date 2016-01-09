@@ -84,10 +84,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/init.qcom.audio.sh:system/etc/init.qcom.audio.sh \
     $(LOCAL_PATH)/rootdir/system/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
 
-# TeleService
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/TeleService.apk:system/priv-app/TeleService/TeleService.apk
-
 # GPS/location security configuration file
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
