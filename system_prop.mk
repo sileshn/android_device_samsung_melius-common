@@ -1,3 +1,7 @@
+# Set read only default composition for USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.usb.default.config=mtp
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.mms_data_profile=5 \
