@@ -183,7 +183,7 @@ typedef enum loc_position_mode_type {
     LOC_POSITION_MODE_RESERVED_5
 } LocPositionMode;
 
-#define MIN_POSSIBLE_FIX_INTERVAL 1000 /* msec */
+#define MIN_POSSIBLE_FIX_INTERVAL 100 /* msec */
 
 /** Flags to indicate which values are valid in a GpsLocationExtended. */
 typedef uint16_t GpsLocationExtendedFlags;
