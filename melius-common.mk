@@ -143,7 +143,7 @@ PRODUCT_PACKAGES += \
 
 #OTA
 PRODUCT_PACKAGES += \
-    CMRemixOTA
+    SlimOTA
 
 # OpenCamera
 PRODUCT_COPY_FILES += \
