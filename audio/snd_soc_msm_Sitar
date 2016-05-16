@@ -3836,6 +3836,67 @@ SectionDevice
 EndSection
 
 SectionDevice
+    Name "FM Headset"
+    Comment "FM Headset device"
+ 
+    EnableSequence
+        'PRI_RX Channels':0:Two
+        'RX2 MIX1 INP1':0:RX1
+        'RX3 MIX1 INP1':0:RX2
+        'DAC4 MUX':0:ON
+        'HPHL Volume':1:75
+        'HPHR Volume':1:75
+        'RX2 Digital Volume':2:64.5%
+        'RX3 Digital Volume':2:64.5%
+    EndSequence
+ 
+    DisableSequence
+        'RX2 MIX1 INP1':0:ZERO
+        'RX3 MIX1 INP1':0:ZERO
+        'DAC4 MUX':0:ZERO
+        'HPHL Volume':1:0
+        'HPHR Volume':1:0
+        'RX2 Digital Volume':1:0
+        'RX3 Digital Volume':1:0
+    EndSequence
+ 
+    ACDBID  105:1
+    EffectsMixerCTL "SRS TruMedia"
+    EC_REF_RXMixerCTL "I2S_RX"
+ 
+EndSection
+ 
+SectionDevice
+    Name "FM Speaker"
+    Comment "FM Speaker device"
+ 
+    EnableSequence
+        'DAC3 MUX':0:INV_RX1
+        'DAC2 MUX':0:RX1
+        'DAC1 MUX':0:RX1
+        'LINEOUT1 Volume':1:100
+        'LINEOUT2 Volume':1:100
+        'PRI_RX Channels':0:One
+        'RX1 MIX1 INP1':0:RX1
+        'RX1 Digital Volume':2:63.7%
+        'PMIC SPK Gain':0:POS_20_DB
+    EndSequence
+ 
+    DisableSequence
+        'RX1 MIX1 INP1':0:ZERO
+        'DAC3 MUX':0:ZERO
+        'DAC2 MUX':0:ZERO
+        'DAC1 MUX':0:ZERO
+        'RX1 Digital Volume':1:0
+    EndSequence
+ 
+    ACDBID  106:1
+    EffectsMixerCTL "SRS TruMedia"
+    EC_REF_RXMixerCTL "I2S_RX"
+ 
+EndSection
+
+SectionDevice
 	Name "PROXY Rx"
 	Comment "PROXY Rx device"
 
