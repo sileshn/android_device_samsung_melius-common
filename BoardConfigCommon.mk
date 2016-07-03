@@ -54,7 +54,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/melius-common/bluetooth
 
 # Audio
-AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Allow suspend in charge mode
