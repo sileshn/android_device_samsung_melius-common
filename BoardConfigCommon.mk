@@ -75,4 +75,4 @@ COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 BOARD_RIL_CLASS := ../../../device/samsung/melius-common/ril/
 
 # CMHW
-BOARD_HARDWARE_CLASS := device/samsung/melius-common/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/melius-common/cmhw
