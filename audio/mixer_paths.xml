@@ -320,10 +320,6 @@
         <ctl name="COMP1 Switch" value="1" />
     </path>
 
-    <path name="line">
-        <path name="headphones" />
-    </path>
-
     <path name="headset-mic">
         <path name="adc2" />
         <ctl name="ADC2 Volume" value="3" />
@@ -365,10 +361,6 @@
         <ctl name="RX3 Digital Volume" value="88" />
     </path>
 
-    <path name="voice-line">
-        <path name="voice-headphones" />
-    </path>
-
     <path name="voice-headset-mic">
         <path name="headset-mic" />
     </path>
@@ -391,10 +383,6 @@
         <ctl name="HPHR Volume" value="3" />
         <ctl name="RX2 Digital Volume" value="57" />
         <ctl name="RX3 Digital Volume" value="57" />
-    </path>
-
-    <path name="speaker-and-line">
-        <path name="speaker-and-headphones" />
     </path>
 
     <path name="voip-handset-comm">
