@@ -1668,7 +1668,6 @@ static int loc_eng_stop_handler(loc_eng_data_s_type &loc_eng_data)
    int ret_val = LOC_API_ADAPTER_ERR_SUCCESS;
 
    if (loc_eng_data.adapter->isInSession()) {
-
        ret_val = loc_eng_data.adapter->stopFix();
        if (ret_val == LOC_API_ADAPTER_ERR_SUCCESS)
        {
