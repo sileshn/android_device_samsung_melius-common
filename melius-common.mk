@@ -12,11 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
-# Also get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/melius-common/melius-common-vendor.mk)
-
 # Common Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/melius-common/overlay
 
@@ -91,12 +86,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
-# AudioFX
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/AudioFX.apk:system/priv-app/AudioFX/AudioFX.apk
-
 # Doze
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     SamsungDoze
 
 # GPS config
@@ -107,10 +98,6 @@ PRODUCT_COPY_FILES += \
 # GPS HAL
 PRODUCT_PACKAGES += \
     gps.msm8960
-
-# Eleven
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/Eleven.apk:system/app/Eleven/Eleven.apk
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -144,20 +131,19 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 
-#OTA
-PRODUCT_PACKAGES += \
-    SlimOTA
-
-# OpenCamera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/net.sourceforge.opencamera.apk:system/priv-app/OpenCamera/OpenCamera.apk
-
 # Voice processing
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing
 
 # call common melius system props
 $(call inherit-product, device/samsung/melius-common/system_prop.mk)
+
+# For userdebug builds
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0 \
+    ro.debuggable=1 \
+    persist.service.adb.enable=1
 
 # call common msm8930
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)

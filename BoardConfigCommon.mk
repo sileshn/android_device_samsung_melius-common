@@ -27,12 +27,14 @@ TARGET_SPECIFIC_HEADER_PATH := device/samsung/melius-common/include
 
 # Kernel
 BOARD_KERNEL_CMDLINE         := androidboot.hardware=qcom user_debug=22 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1
+BOARD_KERNEL_CMDLINE         += androidboot.selinux=permissive
 BOARD_KERNEL_BASE            := 0x80200000
 BOARD_MKBOOTIMG_ARGS         := --ramdisk_offset 0x02000000
 BOARD_KERNEL_PAGESIZE        := 2048
 TARGET_KERNEL_SOURCE         := kernel/samsung/msm8930-common
 TARGET_KERNEL_HAVE_EXFAT 	 := true
 TARGET_KERNEL_CONFIG         := cyanogenmod_melius_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
@@ -45,7 +47,7 @@ BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10485760
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 11430000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1572864000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5821660160
 BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
@@ -71,9 +73,16 @@ TARGET_NEED_DISABLE_FACE_DETECTION_BOTH_CAMERAS := true
 # PowerHAL
 TARGET_POWERHAL_VARIANT := qcom
 
-# Custom RIL class
-COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
+# RIL
+TARGET_RIL_VARIANT := caf
+BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 BOARD_RIL_CLASS := ../../../device/samsung/melius-common/ril/
 
 # CMHW
-BOARD_HARDWARE_CLASS += device/samsung/melius-common/cmhw
+#BOARD_HARDWARE_CLASS += device/samsung/melius-common/cmhw
+
+# Disable dex pre-optimization
+WITH_DEXPREOPT := false
+
+# Avoid CMSDK issues for now
+I_WANT_A_QUAIL_STAR := true
