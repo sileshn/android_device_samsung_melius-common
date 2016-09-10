@@ -1,14 +1,16 @@
+# Set composition for USB
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp
+
 # Set read only default composition for USB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.usb.default.config=mtp
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.mms_data_profile=5 \
     ro.telephony.ril_class=MeliusRIL \
     ro.ril.telephony.mqanelements=6 \
-    persist.radio.add_power_save=1 \
-    persist.data.qmi.adb_logmask=0
+    persist.radio.add_power_save=1
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -53,6 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so
 
+# Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false \
     ro.sys.fw.dex2oat_thread_count=4
