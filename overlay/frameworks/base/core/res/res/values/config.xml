@@ -293,10 +293,10 @@
          The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
 
-    <!-- Ambient display.
+    <!-- Ambient display. -->
     <integer name="config_screenBrightnessDoze">30</integer>
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
-    <bool name="config_dozeAfterScreenOff">true</bool> -->
+    <bool name="config_dozeAfterScreenOff">true</bool>
 
     <!-- Do not set the system language as value of EF LI/EF PL -->
     <bool name="config_use_sim_language_file">false</bool>

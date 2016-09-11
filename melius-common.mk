@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Also get non-open-source specific aspects
+$(call inherit-product, vendor/samsung/melius-common/melius-common-vendor.mk)
+
 # Common Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/melius-common/overlay
 
@@ -81,7 +84,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
 # Doze
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     SamsungDoze
 
 # GPS config
@@ -131,13 +134,6 @@ PRODUCT_PACKAGES += \
 
 # call common melius system props
 $(call inherit-product, device/samsung/melius-common/system_prop.mk)
-
-# For userdebug builds
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.secure=0 \
-    ro.adb.secure=0 \
-    ro.debuggable=1 \
-    persist.service.adb.enable=1
 
 # call common msm8930
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)

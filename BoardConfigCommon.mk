@@ -78,11 +78,11 @@ TARGET_RIL_VARIANT := caf
 BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 BOARD_RIL_CLASS := ../../../device/samsung/melius-common/ril/
 
-# CMHW
-#BOARD_HARDWARE_CLASS += device/samsung/melius-common/cmhw
+# Time service
+BOARD_USES_QC_TIME_SERVICES := true
 
-# Disable dex pre-optimization
-WITH_DEXPREOPT := false
+# CMHW
+BOARD_HARDWARE_CLASS += device/samsung/melius-common/cmhw
 
 # Avoid CMSDK issues for now
 I_WANT_A_QUAIL_STAR := true
