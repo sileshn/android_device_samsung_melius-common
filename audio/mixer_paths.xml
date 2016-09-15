@@ -54,6 +54,11 @@
     <ctl name="DAC2 MUX" value="ZERO" />
     <ctl name="DAC3 MUX" value="ZERO" />
     <ctl name="DAC4 MUX" value="ZERO" />
+    <ctl name="Voip Mode Config" value="12" />
+    <ctl name="Voip Rate Config" value="0" />
+    <ctl name="Voip Evrc Min Max Rate Config" id="0" value="1" />
+    <ctl name="Voip Evrc Min Max Rate Config" id="1" value="4" />
+    <ctl name="Voip Dtx Mode" value="0" />
 
     <!-- echo reference -->
     <ctl name="EC_REF_RX" value="NONE" />
@@ -181,16 +186,6 @@
         <ctl name="Voice_Tx Mixer INTERNAL_BT_SCO_TX_Voice" value="1" />
     </path>
 
-    <path name="voip-call">
-        <ctl name="PRI_RX_Voice Mixer Voip" value="1" />
-        <ctl name="Voip_Tx Mixer PRI_TX_Voip" value="1" />
-    </path>
-
-    <path name="voip-call bt-sco">
-        <ctl name="INTERNAL_BT_SCO_RX_Voice Mixer Voip" value="1" />
-        <ctl name="Voip_Tx Mixer INTERNAL_BT_SCO_TX_Voip" value="1" />
-    </path>
-
     <path name="voice-call afe-proxy">
         <ctl name="AFE_PCM_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer AFE_PCM_TX_Voice" value="1" />
@@ -198,6 +193,21 @@
 
     <path name="voice-call usb-headphones">
         <path name="voice-call afe-proxy" />
+    </path>
+
+    <path name="compress-voip-call">
+        <ctl name="PRI_RX_Voice Mixer Voip" value="1" />
+        <ctl name="Voip_Tx Mixer PRI_TX_Voip" value="1" />
+    </path>
+
+    <path name="compress-voip-call bt-sco">
+        <ctl name="INTERNAL_BT_SCO_RX_Voice Mixer Voip" value="1" />
+        <ctl name="Voip_Tx Mixer INTERNAL_BT_SCO_TX_Voip" value="1" />
+    </path>
+
+    <path name="compress-voip-call usb-headphones">
+        <ctl name="AFE_PCM_RX_Voice Mixer Voip" value="1" />
+        <ctl name="Voip_Tx Mixer AFE_PCM_TX_Voip" value="1" />
     </path>
 
     <path name="incall-rec-uplink">
@@ -287,8 +297,8 @@
 
     <path name="speaker-mic">
         <path name="adc1" />
-        <ctl name="ADC1 Volume" value="3" />
-        <ctl name="DEC1 Volume" value="88" />
+        <ctl name="ADC1 Volume" value="15" />
+        <ctl name="DEC1 Volume" value="96" />
         <ctl name="MICBIAS1 CAPLESS Switch" value="1" />
     </path>
 
