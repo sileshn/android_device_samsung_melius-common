@@ -427,7 +427,7 @@ on post-fs-data
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
     user camera
-    group camera system inet input graphics net_bt_stack
+    group camera system inet input graphics
 
 service thermald /system/bin/thermald
     class main
