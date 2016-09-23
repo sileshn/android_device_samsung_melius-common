@@ -6,7 +6,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=MeliusRIL \
     ro.ril.telephony.mqanelements=6 \
-    persist.radio.add_power_save=1
+    persist.radio.add_power_save=1 \
+    ro.telephony.mms_data_profile=5
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
