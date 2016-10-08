@@ -34,7 +34,6 @@ BOARD_KERNEL_PAGESIZE        := 2048
 TARGET_KERNEL_SOURCE         := kernel/samsung/msm8930-common
 TARGET_KERNEL_HAVE_EXFAT 	 := true
 TARGET_KERNEL_CONFIG         := cyanogenmod_melius_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960

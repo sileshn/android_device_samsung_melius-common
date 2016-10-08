@@ -47,6 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true \
     wifi.interface=wlan0 \
     ro.qualcomm.bt.hci_transport=smd \
+    qcom.bluetooth.soc=smd \
     ro.sys.sdcardfs=true
 
 # QC Perf
