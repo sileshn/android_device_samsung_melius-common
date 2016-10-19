@@ -81,5 +81,3 @@ BOARD_USES_QC_TIME_SERVICES := true
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
 
-# Avoid CMSDK issues for now
-I_WANT_A_QUAIL_STAR := true
