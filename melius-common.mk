@@ -87,6 +87,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Gello
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
