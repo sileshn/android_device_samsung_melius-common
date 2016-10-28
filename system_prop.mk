@@ -23,7 +23,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.smoothstreaming=true \
     use.dedicated.device.for.voip=true \
     use.voice.path.for.pcm.voip=true \
-    media.aac_51_output_enabled=true
+    media.aac_51_output_enabled=true \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -37,9 +39,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    camera2.portability.force_api=1 \
-    media.stagefright.legacyencoder=true \
-    media.stagefright.less-secure=true
+    camera2.portability.force_api=1
 
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -51,6 +51,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bt.hci_transport=smd \
     qcom.bluetooth.soc=smd \
     ro.sys.sdcardfs=true
+
+# QC Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=libqti-perfd-client.so
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
