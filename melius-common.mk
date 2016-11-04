@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    libril_shim
+    libshim_ril
 
 # stlport
 PRODUCT_PACKAGES += \
