@@ -142,10 +142,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SlimOTA
 
-#Amaze File Manager
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/AmazeFileManager-v3.1.0-release.apk:system/priv-app/AmazeFileManager/AmazeFileManager.apk
-
 # Voice processing
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing
