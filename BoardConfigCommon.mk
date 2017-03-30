@@ -38,6 +38,7 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/melius-common/rootdir/fstab.qcom
+LZMA_RAMDISK_TARGETS := recovery
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -84,7 +85,6 @@ BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
 ifeq ($(WITH_TWRP),true)
 BOARD_HAS_NO_REAL_SDCARD := true
 DEVICE_RESOLUTION := 720x1280
-LZMA_RAMDISK_TARGETS := boot,recovery
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_VARIANT := twrp
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
