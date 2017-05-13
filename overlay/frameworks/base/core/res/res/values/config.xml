@@ -135,9 +135,6 @@
          Also, the battery stats are flushed to disk when we hit this level.  -->
     <integer name="config_criticalBatteryWarningLevel">5</integer>
 
-    <!-- Disable lockscreen rotation by default -->
-    <bool name="config_enableLockScreenRotation">false</bool>
-
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
             1 - Menu key
