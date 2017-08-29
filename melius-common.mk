@@ -149,6 +149,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FlipFlap
 
+# call private additions
+$(call inherit-product, additions/full.mk)
+
 # call common melius system props
 $(call inherit-product, device/samsung/melius-common/system_prop.mk)
 
