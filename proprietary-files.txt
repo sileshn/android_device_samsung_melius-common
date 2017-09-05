@@ -41,7 +41,6 @@ bin/qmuxd
 bin/rild
 bin/rmt_storage
 etc/plmn_se13.bin
-lib/libfactoryutil.so
 lib/libril.so
 lib/libsec-ril.so
 lib/libsecnativefeature.so
