@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_c \
+    libshim_camera \
     libshim_ril
 
 # stlport
