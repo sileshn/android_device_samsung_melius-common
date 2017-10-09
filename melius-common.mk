@@ -82,7 +82,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS/location security configuration file
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/sec_config:system/etc/sec_config
+    $(LOCAL_PATH)/rootdir/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Camera
 PRODUCT_PACKAGES += \
