@@ -143,10 +143,6 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 
-# Voice processing
-PRODUCT_PACKAGES += \
-    libqcomvoiceprocessing
-
 # FlipFlap
 PRODUCT_PACKAGES += \
     FlipFlap
