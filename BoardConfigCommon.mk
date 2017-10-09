@@ -20,7 +20,9 @@
 # definition file).
 #
 
-# inherit from common msm8930
+COMMON_PATH := device/samsung/melius-common
+
+# Inherit from common msm8930
 -include device/samsung/msm8930-common/BoardConfigCommon.mk
 
 # Kernel
@@ -35,7 +37,7 @@ TARGET_KERNEL_CONFIG         := samsung_melius_defconfig
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/melius-common/rootdir/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/fstab.qcom
 LZMA_RAMDISK_TARGETS := recovery
 
 # Filesystem
@@ -51,7 +53,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/melius-common/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 
 # Allow suspend in charge mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -73,8 +75,7 @@ BOARD_RIL_CLASS := ../../../device/samsung/melius-common/ril/
 BOARD_USES_QC_TIME_SERVICES := true
 
 # CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
+BOARD_HARDWARE_CLASS += $(COMMON_PATH)/cmhw
 
 # TWRP
 ifeq ($(WITH_TWRP),true)
