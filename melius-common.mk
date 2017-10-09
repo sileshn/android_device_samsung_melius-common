@@ -147,10 +147,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SlimOTA
 
-# Voice processing
-PRODUCT_PACKAGES += \
-    libqcomvoiceprocessing
-
 # FlipFlap
 PRODUCT_PACKAGES += \
     FlipFlap
