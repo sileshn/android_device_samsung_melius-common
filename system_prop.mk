@@ -1,9 +1,8 @@
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=MeliusRIL \
-    ro.ril.telephony.mqanelements=6 \
+    ro.com.android.mobiledata=false \
     persist.radio.add_power_save=1 \
-    ro.telephony.mms_data_profile=5
+    persist.radio.apm_sim_not_pwdn=1
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
