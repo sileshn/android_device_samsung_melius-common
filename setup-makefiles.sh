@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export DEVICE_COMMON=melius-common
+export VENDOR=samsung
+
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
