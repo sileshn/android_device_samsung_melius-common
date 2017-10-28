@@ -38,5 +38,7 @@
 
     <!-- BurnIn protection. This should be enabled on devices that have OLED displays -->
     <bool name="config_enableBurnInProtection">true</bool>
-    
+ 
+    <!-- Show more red in the night if LiveDisplay is enabled -->
+    <integer name="config_nightColorTemperature">3600</integer>
 </resources>
