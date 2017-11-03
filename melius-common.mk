@@ -167,7 +167,7 @@ $(call inherit-product, device/samsung/melius-common/system_prop.mk)
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
 
 # call dalvik heap config
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 ifeq ($(WITH_TWRP),true)
 ADDITIONAL_DEFAULT_PROPERTIES += \
