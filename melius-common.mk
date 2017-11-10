@@ -157,7 +157,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_camera
+    libshim_camera_melius
 
 # call common melius system props
 $(call inherit-product, device/samsung/melius-common/system_prop.mk)
