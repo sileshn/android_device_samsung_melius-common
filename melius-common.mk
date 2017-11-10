@@ -91,7 +91,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_camera
+    libshim_camera_melius
 
 # Doze
 PRODUCT_PACKAGES += \
