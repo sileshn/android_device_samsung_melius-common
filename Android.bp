@@ -2,4 +2,5 @@ subdirs = [
     "hidl/power",
     "hidl/usb",
     "hidl/vibrator",
+    "libshims",
 ]
