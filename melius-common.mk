@@ -137,10 +137,6 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 
-#OTA
-PRODUCT_PACKAGES += \
-    SlimOTA
-
 # Voice processing
 PRODUCT_PACKAGES += \
     libqcomvoiceprocessing
