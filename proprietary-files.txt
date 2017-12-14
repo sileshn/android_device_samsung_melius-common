@@ -2,6 +2,8 @@
 vendor/bin/btnvtool
 vendor/bin/hci_qcomm_init
 vendor/lib/libaptX_encoder.so
+vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so
+vendor/lib/libaptXScheduler.so
 
 # FM Radio
 vendor/bin/fm_qsoc_patches
