@@ -174,6 +174,14 @@
          config to 7.
     <integer name="config_deviceHardwareWakeKeys">65</integer> -->
 
+     <!-- Control the behavior when the user double-taps the home button.
+             0 - Nothing
+             1 - Recent apps view in SystemUI
+          This needs to match the constants in
+          policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
+     -->
+     <integer name="config_doubleTapOnHomeBehavior">1</integer>
+
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
          when adapting to brighter or darker environments.  This parameter controls how quickly
