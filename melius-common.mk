@@ -134,8 +134,7 @@ PRODUCT_PACKAGES += \
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes
+    ebtables
 
 # F2FS
 PRODUCT_PACKAGES += \
