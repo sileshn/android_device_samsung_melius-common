@@ -170,9 +170,6 @@ PRODUCT_PACKAGES += \
 # call common melius system props
 $(call inherit-product, device/samsung/melius-common/system_prop.mk)
 
-# call common melius system debug props
-#$(call inherit-product, device/samsung/melius-common/system_prop_debug.mk)
-
 # call common msm8930
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
 
