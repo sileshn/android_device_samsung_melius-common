@@ -134,7 +134,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service.serrano
+    android.hardware.power@1.0-service.melius
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \
