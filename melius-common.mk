@@ -134,7 +134,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service.serrano
+    android.hardware.power@1.0-service.melius
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \
@@ -170,17 +170,11 @@ PRODUCT_PACKAGES += \
 # call common melius system props
 $(call inherit-product, device/samsung/melius-common/system_prop.mk)
 
-# call common serrano system debug props
-#$(call inherit-product, device/samsung/serrano-common/system_prop_debug.mk)
+# call common melius system debug props
+#$(call inherit-product, device/samsung/melius-common/system_prop_debug.mk)
 
 # call common msm8930
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
 
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-
-ifeq ($(WITH_TWRP),true)
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.secure=0 \
-    ro.adb.secure=0
-endif

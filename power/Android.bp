@@ -2,8 +2,8 @@ cc_binary {
     proprietary: true,
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
-    name: "android.hardware.power@1.0-service.serrano",
-    init_rc: ["android.hardware.power@1.0-service.serrano.rc"],
+    name: "android.hardware.power@1.0-service.melius",
+    init_rc: ["android.hardware.power@1.0-service.melius.rc"],
     srcs: [
         "service.cpp",
         "Power.cpp",
