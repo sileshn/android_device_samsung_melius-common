@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq ($(MELIUS_WITH_TWRP),true)
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_VARIANT := twrp
@@ -25,3 +26,4 @@ TW_NO_LEGACY_PROPS := true
 TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := false
 TW_DEFAULT_LANGUAGE := en-US
+endif
