@@ -163,6 +163,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FlipFlap
 
+# Superuser
+ifeq ($(MELIUS_WITH_SU),true)
+PRODUCT_PACKAGES += \
+    su
+endif
+
 # call common melius system props
 $(call inherit-product, device/samsung/melius-common/system_prop.mk)
 
