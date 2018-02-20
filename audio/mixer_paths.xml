@@ -401,15 +401,13 @@
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
         <ctl name="DAC1 Switch" value="1" />
-        <ctl name="RX1 Digital Volume" value="88" />
+        <ctl name="RX1 Digital Volume" value="78" />
     </path>
 
     <path name="voip-speaker-comm">
         <path name="spk" />
-        <ctl name="LINEOUT1 Volume" value="11" />
-        <ctl name="LINEOUT2 Volume" value="11" />
         <ctl name="RX1 Digital Volume" value="84" />
-        <ctl name="PMIC SPK Gain" value="POS_20_DB" />
+        <ctl name="SPK DRV Volume" value="8" />
     </path>
 
     <path name="voip-headset-comm">
@@ -419,28 +417,28 @@
         <ctl name="DAC4 MUX" value="RX1" />
         <ctl name="HPHL Volume" value="12" />
         <ctl name="HPHR Volume" value="12" />
-        <ctl name="RX2 Digital Volume" value="88" />
-        <ctl name="RX3 Digital Volume" value="88" />
+        <ctl name="RX2 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="84" />
     </path>
 
     <path name="voip-main-mic-comm">
         <path name="adc1" />
-        <ctl name="ADC1 Volume" value="3" />
-        <ctl name="DEC1 Volume" value="90" />
+        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="DEC1 Volume" value="84" />
         <ctl name="MICBIAS2 CAPLESS Switch" value="1" />
     </path>
 
     <path name="voip-sub-mic-comm">
         <path name="adc3" />
-        <ctl name="ADC3 Volume" value="3" />
-        <ctl name="DEC1 Volume" value="90" />
+        <ctl name="ADC3 Volume" value="12" />
+        <ctl name="DEC1 Volume" value="84" />
         <ctl name="MICBIAS2 CAPLESS Switch" value="1" />
     </path>
 
     <path name="voip-headset-mic-comm">
         <path name="adc2" />
-        <ctl name="ADC2 Volume" value="3" />
-        <ctl name="DEC1 Volume" value="90" />
+        <ctl name="ADC2 Volume" value="12" />
+        <ctl name="DEC1 Volume" value="84" />
         <ctl name="MICBIAS2 CAPLESS Switch" value="1" />
     </path>
 
