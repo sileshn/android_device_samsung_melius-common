@@ -163,10 +163,6 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 
-#OTA
-PRODUCT_PACKAGES += \
-    SlimOTA
-
 # FlipFlap
 PRODUCT_PACKAGES += \
     FlipFlap
