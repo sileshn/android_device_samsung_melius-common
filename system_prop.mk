@@ -75,3 +75,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.log_stats=true \
     ro.lmk.upgrade_pressure=40 \
     ro.lmk.use_psi=false
+
+# Android Go / Low RAM usage
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.low_ram=true
