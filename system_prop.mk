@@ -52,3 +52,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false \
     ro.am.reschedule_service=true
+
+# Android Go / Low RAM usage
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.low_ram=true
