@@ -18,5 +18,7 @@
     <!-- Indicates if search view is taking the whole toolbar space. On larger
          layouts we reduce this to an input-box adjacent to menu actions. -->
     <bool name="full_bar_search_view">false</bool>
+
+    <!-- Indicates if internal storage is shown as default or not. -->
+    <bool name="config_default_show_device_root">true</bool>
 </resources>
- 
