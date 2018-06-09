@@ -157,6 +157,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FlipFlap
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_camera
+
 # call common melius system props
 $(call inherit-product, device/samsung/melius-common/system_prop.mk)
 
