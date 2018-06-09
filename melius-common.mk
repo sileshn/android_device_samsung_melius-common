@@ -89,6 +89,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_camera
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
