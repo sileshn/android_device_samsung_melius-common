@@ -58,3 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Android Go / Low RAM usage
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.low_ram=true
+
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2016-08-01
