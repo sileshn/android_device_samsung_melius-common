@@ -315,4 +315,8 @@
 
     <!--AlwaysOnDisplay disabled by default -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <!-- True if home app should be pinned via Pinner Service -->
+    <bool name="config_pinnerHomeApp">true</bool>
+
 </resources>
