@@ -13,7 +13,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.disable=1 \
     mm.enable.smoothstreaming=true \
     use.dedicated.device.for.voip=false \
-    use.voice.path.for.pcm.voip=false \
+    vendor.use.voice.path.for.pcm.voip=false \
     media.aac_51_output_enabled=true
 
 # Graphics
