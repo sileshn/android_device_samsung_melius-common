@@ -17,10 +17,10 @@ lib/libacdbloader.so
 lib/libaudcal.so
 
 # Adreno GPU
-etc/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw
-etc/firmware/vidc_1080p.fw
-etc/firmware/vidcfw.elf
+vendor/etc/firmware/a300_pfp.fw
+vendor/etc/firmware/a300_pm4.fw
+vendor/etc/firmware/vidc_1080p.fw
+vendor/etc/firmware/vidcfw.elf
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
