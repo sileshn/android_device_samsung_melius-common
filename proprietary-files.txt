@@ -13,7 +13,7 @@ vendor/bin/mpdecision
 vendor/bin/thermald
 
 # Audio
-lib/libacdbloader.so
+vendor/lib/libacdbloader.so
 lib/libaudcal.so
 
 # Adreno GPU
