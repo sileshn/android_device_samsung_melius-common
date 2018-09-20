@@ -96,3 +96,7 @@ JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(COMMON_PATH)/lineagehw|**/*.jav
 ifeq ($(WITH_TWRP),true)
 -include $(COMMON_PATH)/twrp.mk
 endif
+
+# Vendor init
+TARGET_INIT_VENDOR_LIB := libinit_melius
+TARGET_RECOVERY_DEVICE_MODULES := libinit_melius
