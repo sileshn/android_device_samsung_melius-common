@@ -235,6 +235,7 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
 service qcom-audio /system/vendor/bin/init.qcom.audio.sh
    class late_start
    user root
+   group system
    disabled
    oneshot
 
