@@ -88,6 +88,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
+TARGET_RIL_VARIANT := caf
 
 # LineageHW
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(COMMON_PATH)/lineagehw|**/*.java
