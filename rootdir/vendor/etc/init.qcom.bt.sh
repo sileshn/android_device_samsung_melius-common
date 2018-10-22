@@ -1,16 +1,16 @@
-#!/vendor/bin/sh
+#!/system/bin/sh
 
 LOG_TAG="qcom-bluetooth"
 LOG_NAME="${0}:"
 
 loge ()
 {
-  /vendor/bin/log -t $LOG_TAG -p e "$LOG_NAME $@"
+  /system/bin/log -t $LOG_TAG -p e "$LOG_NAME $@"
 }
 
 logi ()
 {
-  /vendor/bin/log -t $LOG_TAG -p i "$LOG_NAME $@"
+  /system/bin/log -t $LOG_TAG -p i "$LOG_NAME $@"
 }
 
 failed ()
