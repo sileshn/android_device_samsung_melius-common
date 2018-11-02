@@ -39,7 +39,6 @@ vendor/lib/libsc-a3xx.so
 vendor/bin/qmuxd
 vendor/bin/netmgrd
 vendor/bin/rmt_storage
-vendor/lib/libconfigdb.so
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl
 vendor/lib/libdsutils.so
