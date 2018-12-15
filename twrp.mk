@@ -27,3 +27,7 @@ TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := false
 TW_DEFAULT_LANGUAGE := en-US
 TW_USE_TOOLBOX := true
+
+# Time zone data for recovery
+PRODUCT_COPY_FILES += \
+    system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
