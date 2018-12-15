@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq ($(WITH_TWRP),true)
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_VARIANT := twrp
@@ -27,4 +26,7 @@ TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := false
 TW_DEFAULT_LANGUAGE := en-US
 TW_USE_TOOLBOX := true
-endif
+
+# Time zone data for recovery
+PRODUCT_COPY_FILES += \
+    system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata

@@ -95,4 +95,6 @@ BOARD_PROVIDES_LIBRIL := true
 BOARD_HARDWARE_CLASS += $(COMMON_PATH)/lineagehw
 
 # TWRP
+ifeq ($(WITH_TWRP),true)
 -include $(COMMON_PATH)/twrp.mk
+endif
