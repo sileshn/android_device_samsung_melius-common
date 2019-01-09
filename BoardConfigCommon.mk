@@ -73,7 +73,6 @@ TARGET_NO_RPC := true
 
 # Allow suspend in charge mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
-BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # Camera
 TARGET_LD_SHIM_LIBS := \
