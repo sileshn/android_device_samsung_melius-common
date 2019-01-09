@@ -14,7 +14,6 @@ vendor/bin/thermald
 
 # Audio
 vendor/lib/libacdbloader.so
-lib/libaudcal.so
 
 # Adreno GPU
 vendor/etc/firmware/a300_pfp.fw
@@ -42,12 +41,11 @@ vendor/lib/libsc-a3xx.so
 vendor/bin/qmuxd
 vendor/bin/netmgrd
 vendor/bin/rmt_storage
-vendor/lib/libconfigdb.so
 vendor/lib/libdiag.so
-vendor/lib/libdsi_netctrl
+vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
-vendor/lib/libnetmgr
+vendor/lib/libnetmgr.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
