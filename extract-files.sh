@@ -1,34 +1,56 @@
 #!/bin/bash
+#
+# Copyright (C) 2019 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
 set -e
 
-function extract() {
-    for FILE in `egrep -v '(^#|^$)' $1`; do
-        OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
-        FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
-        DEST=${PARSING_ARRAY[1]}
-        if [ -z $DEST ]; then
-            DEST=$FILE
-        fi
-        DIR=`dirname $FILE`
-        if [ ! -d $2/$DIR ]; then
-            mkdir -p $2/$DIR
-        fi
-        # Try CM target first
-        adb pull /system/$DEST $2/$DEST
-        # if file does not exist try OEM target
-        if [ "$?" != "0" ]; then
-            adb pull /system/$FILE $2/$DEST
-        fi
-    done
-}
+# Load extract_utils and do some sanity checks
+MY_DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-BASE=../../../vendor/samsung/melius-common/proprietary
-rm -rf $BASE/*
+AOKP_ROOT="$MY_DIR"/../../..
 
-DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
-rm -rf $DEVBASE/*
+HELPER="$AOKP_ROOT"/vendor/aokp/build/tools/extract_utils.sh
+if [ ! -f "$HELPER" ]; then
+    echo "Unable to find helper script at $HELPER"
+    exit 1
+fi
+. "$HELPER"
 
-extract ../../samsung/melius-common/proprietary-files.txt $DEVBASE
+# Default to sanitizing the vendor folder before extraction
+CLEAN_VENDOR=true
 
-./../../samsung/melius-common/setup-makefiles.sh
+while [ "$1" != "" ]; do
+    case $1 in
+        -n | --no-cleanup )     CLEAN_VENDOR=false
+                                ;;
+        -s | --section )        shift
+                                SECTION=$1
+                                CLEAN_VENDOR=false
+                                ;;
+        * )                     SRC=$1
+                                ;;
+    esac
+    shift
+done
+
+if [ -z "$SRC" ]; then
+    SRC=adb
+fi
+
+# Initialize the helper for common device
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$AOKP_ROOT" true "$CLEAN_VENDOR"
+
+extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
+
+if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
+    # Reinitialize the helper for device
+    setup_vendor "$DEVICE" "$VENDOR" "$AOKP_ROOT" false "$CLEAN_VENDOR"
+
+    extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC" "$SECTION"
+fi
+
+"$MY_DIR"/setup-makefiles.sh
