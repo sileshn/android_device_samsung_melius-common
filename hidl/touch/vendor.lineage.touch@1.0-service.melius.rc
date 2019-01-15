@@ -1,0 +1,4 @@
+service vendor.touch-hal-1-0-melius /vendor/bin/hw/vendor.lineage.touch@1.0-service.melius
+    class hal
+    user system
+    group system
