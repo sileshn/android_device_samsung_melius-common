@@ -4,5 +4,4 @@
     <bool name="def_install_non_market_apps">true</bool>
     <bool name="def_screen_brightness_automatic_mode">true</bool>
     <bool name="def_vibrate_when_ringing">true</bool>
-    <string name="def_location_providers_allowed" translatable="false">gps,network</string>
 </resources>
