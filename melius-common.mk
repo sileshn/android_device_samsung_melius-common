@@ -129,7 +129,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service.melius
+    android.hardware.power@1.1-service.melius
 
 # Touch
 PRODUCT_PACKAGES += \
