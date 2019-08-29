@@ -164,7 +164,7 @@ service irsc_util /system/vendor/bin/irsc_util "/system/vendor/etc/sec_config"
     oneshot
 
 service rmt_storage /system/vendor/bin/rmt_storage
-    class main
+    class core
     user root
     group system wakelock
     shutdown critical
@@ -184,9 +184,9 @@ on property:vendor.bluetooth.hciattach=false
 
 # QMUX must be in multiple groups to support external process connections
 service qmuxd /system/vendor/bin/qmuxd
-    class main
-    user root
-    group radio audio bluetooth gps diag wakelock
+    class core
+    user radio
+    group radio audio bluetooth gps diag wakelock log
 
 service netmgrd /system/vendor/bin/netmgrd
     class main
