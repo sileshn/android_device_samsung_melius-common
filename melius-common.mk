@@ -18,7 +18,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
 # Also get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/melius-common/melius-common-vendor.mk)
 
-# Common Overlays
+# Soong
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
+# Common overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/melius-common/overlay
 
 # Device uses high-density artwork where available
