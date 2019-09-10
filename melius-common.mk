@@ -159,6 +159,10 @@ PRODUCT_PACKAGES += \
 # FlipFlap
 PRODUCT_PACKAGES += \
     FlipFlap
+	
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_binder
 
 # call common melius system props
 $(call inherit-product, $(LOCAL_PATH)/system_prop.mk)
