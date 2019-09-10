@@ -103,6 +103,10 @@ TARGET_PROVIDES_LIBLIGHT := true
 BOARD_PROVIDES_LIBRIL := true
 TARGET_RIL_VARIANT := caf
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib/libperipheral_client.so|libshim_binder.so
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 -include $(COMMON_PATH)/twrp.mk
