@@ -93,5 +93,5 @@ ifeq ($(WITH_TWRP),true)
 endif
 
 # Vendor init
-TARGET_INIT_VENDOR_LIB := libinit_melius
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_melius
 TARGET_RECOVERY_DEVICE_MODULES := libinit_melius
