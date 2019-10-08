@@ -145,11 +145,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ebtables
 
-# F2FS
-PRODUCT_PACKAGES += \
-    fsck.f2fs \
-    mkfs.f2fs
-
 #EXFAT
 PRODUCT_PACKAGES += \
     mount.exfat \
