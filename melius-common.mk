@@ -112,12 +112,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/vendor/etc/thermald.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald.conf
 
-# GPS config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/gps.conf:system/etc/gps.conf
-
 # GPS HAL
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
+    android.hardware.gnss@1.0-service \
+    gps.conf \
     gps.msm8960
 
 # Lights
