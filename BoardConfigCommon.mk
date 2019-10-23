@@ -84,9 +84,6 @@ TARGET_NEED_DISABLE_FACE_DETECTION_BOTH_CAMERAS := true
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# RIL
-BOARD_PROVIDES_LIBRIL := true
-
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libperipheral_client.so|libshim_binder.so
