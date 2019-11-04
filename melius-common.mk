@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+$(LOCAL_PATH) := device/samsung/melius-common
+
 # Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
 
@@ -22,7 +24,7 @@ $(call inherit-product, vendor/samsung/melius-common/melius-common-vendor.mk)
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/melius-common/overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -155,7 +157,7 @@ PRODUCT_PACKAGES += \
     FlipFlap
 
 # call common melius system props
-$(call inherit-product, device/samsung/melius-common/system_prop.mk)
+$(call inherit-product, $(LOCAL_PATH)/system_prop.mk)
 
 # call common msm8930
 $(call inherit-product, device/samsung/msm8930-common/msm8930.mk)
