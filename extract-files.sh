@@ -13,7 +13,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 AOKP_ROOT="$MY_DIR"/../../..
 
-HELPER="$AOKP_ROOT"/vendor/rr/build/tools/extract_utils.sh
+HELPER="$AOKP_ROOT"/vendor/aokp/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
