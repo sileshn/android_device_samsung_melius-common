@@ -144,10 +144,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service.melius
 
-# IPv6 tethering
-PRODUCT_PACKAGES += \
-    ebtables
-
 #EXFAT
 PRODUCT_PACKAGES += \
     mount.exfat \
