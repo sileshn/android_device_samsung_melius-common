@@ -45,6 +45,9 @@ TARGET_KERNEL_CONFIG         := samsung_melius_defconfig
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
+# LMKD stats logging
+TARGET_LMKD_STATS_LOG := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/fstab.qcom
 LZMA_RAMDISK_TARGETS := recovery
