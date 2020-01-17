@@ -292,7 +292,7 @@ AgpsState* AgpsReleasedState::onRsrcEvent(AgpsRsrcStatus event, void* data)
         Notification notification(subscriber, event, false);
         subscriber->notifyRsrcStatus(notification);
     }
-        [[fallthrough]];
+        // break;
     case RSRC_GRANTED:
     case RSRC_RELEASED:
     case RSRC_DENIED:
@@ -624,12 +624,12 @@ AgpsStateMachine::AgpsStateMachine(servicerType servType,
                                    void *cb_func,
                                    AGpsExtType type,
                                    bool enforceSingleSubscriber) :
-    mServicer(Servicer :: getServicer(servType, (void *)cb_func)),
     mStatePtr(new AgpsReleasedState(this)),mType(type),
     mAPN(NULL),
     mAPNLen(0),
     mBearer(AGPS_APN_BEARER_INVALID),
-    mEnforceSingleSubscriber(enforceSingleSubscriber)
+    mEnforceSingleSubscriber(enforceSingleSubscriber),
+    mServicer(Servicer :: getServicer(servType, (void *)cb_func))
 {
     linked_list_init(&mSubscribers);
 
@@ -688,7 +688,7 @@ void AgpsStateMachine::setAPN(const char* apn, unsigned int len)
     if (NULL != apn) {
         mAPN = new char[len+1];
         memcpy(mAPN, apn, len);
-        mAPN[len] = 0;
+        mAPN[len] = NULL;
 
         mAPNLen = len;
     } else {
@@ -933,7 +933,6 @@ void DSStateMachine :: onRsrcEvent(AgpsRsrcStatus event)
             event = RSRC_DENIED;
             LOC_LOGE(" Switching event to RSRC_DENIED\n");
         }
-        [[fallthrough]];
     case RSRC_DENIED:
         mStatePtr = mStatePtr->onRsrcEvent(event, NULL);
         break;

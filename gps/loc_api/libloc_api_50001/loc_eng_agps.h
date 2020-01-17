@@ -267,8 +267,7 @@ public:
 // each subscriber is a AGPS client.  In the case of ATL, there could be
 // multiple clients from modem.  In the case of BIT, there is only one
 // cilent from BIT daemon.
-class Subscriber {
-public:
+struct Subscriber {
     const uint32_t ID;
     const AgpsStateMachine* mStateMachine;
     inline Subscriber(const int id,
