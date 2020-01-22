@@ -115,7 +115,8 @@ PRODUCT_COPY_FILES += \
 # GPS HAL
 PRODUCT_PACKAGES += \
     gps.conf \
-    gps.msm8960
+    gps.msm8960 \
+    sap.conf
 
 # Lights
 PRODUCT_PACKAGES += \
