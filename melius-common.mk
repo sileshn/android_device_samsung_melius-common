@@ -117,7 +117,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.0-service \
     gps.conf \
-    gps.msm8960
+    gps.msm8960 \
+    sap.conf
 
 # Lights
 PRODUCT_PACKAGES += \
