@@ -99,8 +99,8 @@ PRODUCT_PACKAGES += \
     Snap
 
 # Doze
-#PRODUCT_PACKAGES += \
-#    SamsungDoze
+PRODUCT_PACKAGES += \
+    SamsungDoze
 
 # Prima opensource driver files
 PRODUCT_COPY_FILES += \
