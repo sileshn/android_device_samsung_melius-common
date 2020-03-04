@@ -21,10 +21,11 @@
 # definition file).
 #
 
-COMMON_PATH := device/samsung/melius-common
-
 # Inherit from common msm8930
--include device/samsung/msm8930-common/BoardConfigCommon.mk
+-include $(PLATFORM_PATH)/BoardConfigCommon.mk
+
+# Inherit from proprietary vendor
+-include $(COMMON_VENDOR_PATH)/BoardConfigVendor.mk
 
 # Includes
 TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
