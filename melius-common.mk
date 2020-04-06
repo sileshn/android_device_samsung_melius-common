@@ -160,10 +160,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FlipFlap
 
-# Recorder
-PRODUCT_PACKAGES += \
-    Recorder
-
 # call common melius system props
 $(call inherit-product, $(LOCAL_PATH)/system_prop.mk)
 
