@@ -96,7 +96,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    CameraGo
 
 # Doze
 PRODUCT_PACKAGES += \
