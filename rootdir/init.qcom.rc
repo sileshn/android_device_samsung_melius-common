@@ -533,6 +533,9 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class core
     user camera
     group camera system inet input graphics media
+	
+on property:init.svc.qcamerasvr=running
+    restart media
 
 #service thermald /vendor/bin/thermald
 #    class main
