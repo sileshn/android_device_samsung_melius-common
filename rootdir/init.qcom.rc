@@ -536,6 +536,9 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
     disabled
+	
+on property:init.svc.qcamerasvr=running
+    restart media
 
 #service thermald /vendor/bin/thermald
 #    class main
