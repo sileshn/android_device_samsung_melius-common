@@ -39,6 +39,7 @@ BOARD_KERNEL_BASE            := 0x80200000
 BOARD_KERNEL_IMAGE_NAME      := zImage
 BOARD_MKBOOTIMG_ARGS         := --ramdisk_offset 0x02000000
 BOARD_KERNEL_PAGESIZE        := 2048
+BOARD_RAMDISK_USE_XZ 		 := true
 TARGET_KERNEL_SOURCE         := kernel/samsung/msm8930-common
 TARGET_KERNEL_CONFIG         := samsung_melius_defconfig
 
@@ -50,7 +51,6 @@ TARGET_LMKD_STATS_LOG := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/fstab.qcom
-LZMA_RAMDISK_TARGETS := recovery
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
