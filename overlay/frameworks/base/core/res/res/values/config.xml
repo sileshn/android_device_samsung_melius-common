@@ -306,27 +306,11 @@
     <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
     <bool name="config_useRoundIcon">true</bool>
 
-    <!-- Default files to pin via Pinner Service -->
-    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
-        <item>"/system/framework/arm/boot-framework.oat"</item>
-        <item>"/system/framework/framework.jar"</item>
-        <item>"/system/framework/oat/arm/services.odex"</item>
-        <item>"/system/framework/services.jar"</item>
-        <item>"/system/framework/arm/boot.oat"</item>
-        <item>"/system/framework/arm/boot-core-libart.oat"</item>
-        <item>"/apex/com.android.runtime/javalib/core-oj.jar"</item>
-        <item>"/apex/com.android.runtime/javalib/core-libart.jar"</item>
-        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
-    </string-array>
-
     <!-- AlwaysOnDisplay  -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
     <!--AlwaysOnDisplay disabled by default -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
-
-    <!-- True if home app should be pinned via Pinner Service -->
-    <bool name="config_pinnerHomeApp">true</bool>
 
     <!-- If device supports corner radius on windows.
          This should be turned off on low-end devices to improve animation performance. -->
