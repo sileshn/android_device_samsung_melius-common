@@ -47,6 +47,8 @@ on early-boot
     # Set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
 
+    start qcamerasvr
+
 on boot
     # Permissions for bluetooth
     chmod 0660 /sys/devices/platform/msm_serial_hs.0/clock
@@ -530,9 +532,10 @@ on post-fs-data
 
 # Start camera server as daemon
 service qcamerasvr /vendor/bin/mm-qcamera-daemon
-    class late_start
+    class main
     user camera
     group camera system inet input graphics
+    disabled
 
 #service thermald /vendor/bin/thermald
 #    class main
