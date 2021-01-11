@@ -146,10 +146,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service.melius
 
-# FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
-	
 # Shims
 PRODUCT_PACKAGES += \
     libshim_binder
