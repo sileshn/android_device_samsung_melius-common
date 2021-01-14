@@ -49,6 +49,9 @@ BOARD_KERNEL_PAGESIZE        := 2048
 TARGET_KERNEL_SOURCE         := kernel/samsung/msm8930-common
 TARGET_KERNEL_CONFIG         := samsung_melius_defconfig
 
+# Allow missing dependencies
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 
