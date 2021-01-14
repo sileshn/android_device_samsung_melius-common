@@ -25,8 +25,6 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_TARGET_USES_QCOM_BSP := true
 TW_NO_LEGACY_PROPS := true
 TW_EXCLUDE_SUPERSU := true
-TW_EXTRA_LANGUAGES := false
-TW_DEFAULT_LANGUAGE := en-US
 TW_USE_TOOLBOX := true
 
 # Time zone data for recovery
