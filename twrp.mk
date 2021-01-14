@@ -24,7 +24,6 @@ TW_INCLUDE_CRYPTO := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_TARGET_USES_QCOM_BSP := true
 TW_NO_LEGACY_PROPS := true
-TW_EXCLUDE_SUPERSU := true
 TW_USE_TOOLBOX := true
 
 # Time zone data for recovery
