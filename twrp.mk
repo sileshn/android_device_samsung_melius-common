@@ -16,6 +16,7 @@ ALLOW_MISSING_DEPENDENCIES := true
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_VARIANT := twrp
+TARGET_KERNEL_CONFIG := twrp_melius_defconfig
 TARGET_RECOVERY_FSTAB := device/samsung/melius-common/rootdir/twrp.fstab
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_EXCLUDE_TWRPAPP := true
@@ -27,7 +28,3 @@ TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := false
 TW_DEFAULT_LANGUAGE := en-US
 TW_USE_TOOLBOX := true
-
-# Time zone data for recovery
-PRODUCT_COPY_FILES += \
-    system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
