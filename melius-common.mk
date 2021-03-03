@@ -98,6 +98,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Doze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
 # Prima opensource driver files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prima/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
