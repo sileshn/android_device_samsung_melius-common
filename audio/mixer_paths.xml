@@ -442,21 +442,21 @@
     <path name="voip-main-mic-comm">
         <path name="adc1" />
         <ctl name="ADC1 Volume" value="12" />
-        <ctl name="DEC1 Volume" value="84" />
+        <ctl name="DEC1 Volume" value="96" />
         <ctl name="MICBIAS2 CAPLESS Switch" value="1" />
     </path>
 
     <path name="voip-sub-mic-comm">
-        <path name="adc3" />
-        <ctl name="ADC3 Volume" value="12" />
-        <ctl name="DEC1 Volume" value="84" />
+        <path name="adc1" />
+        <ctl name="ADC1 Volume" value="12" />
+        <ctl name="DEC1 Volume" value="96" />
         <ctl name="MICBIAS2 CAPLESS Switch" value="1" />
     </path>
 
     <path name="voip-headset-mic-comm">
         <path name="adc2" />
         <ctl name="ADC2 Volume" value="12" />
-        <ctl name="DEC1 Volume" value="84" />
+        <ctl name="DEC1 Volume" value="96" />
         <ctl name="MICBIAS2 CAPLESS Switch" value="1" />
     </path>
 
